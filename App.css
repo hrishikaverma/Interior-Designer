@@ -1,0 +1,177 @@
+/* index.css */
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Container */
+.main-container {
+  padding: 20px;
+}
+
+/* Home Page Section */
+.home {
+  text-align: center;
+}
+
+.home header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home section.intro p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.home .projects {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.home .project-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Gallery Page */
+.gallery {
+  text-align: center;
+}
+
+.gallery .gallery-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  width: 30%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+}
+
+/* Contact Page */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact button {
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background-color: #555;
+}
+
+/* Services Page */
+.services {
+  padding: 20px;
+}
+
+.services .service {
+  margin-bottom: 30px;
+}
+
+.services .service h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.services .service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home .projects, .home .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery .gallery-grid {
+    flex-direction: column;
+  }
+
+  .gallery-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}

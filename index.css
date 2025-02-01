@@ -1,0 +1,604 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #e9f4f4; /* lighter background */
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  background: url("https://media.istockphoto.com/id/2046945081/photo/modern-style-luxury-black-living-room-with-city-view-in-the-night-3d-render.jpg?s=612x612&w=0&k=20&c=EptmKtc17Hg_1JloU11XTQdxmXoWBIC0mCwXeXimk08=") no-repeat center center/cover;
+  text-align: center;
+  padding: 120px 50px;
+  color: white;
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #008080; /* teal */
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  background: #005f5f;
+}
+
+/* Navigation */
+.navigation {
+  background: #005f5f;
+  padding: 5px 0;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+.nav-logo {
+  width: 30px;
+  height: auto;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a7e0e0;
+}
+
+/* About Section */
+.about {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-item {
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.about-item h3 {
+  font-size: 1.8rem;
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.about-item p,
+.about-item ul {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.about-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.team-member {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h4 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.client-testimonial {
+  margin-top: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Services Section */
+.services {
+  background: #f0f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+.service-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  width: 280px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #008080;
+}
+
+.service-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Icons */
+.service-icon {
+  font-size: 2.5rem;
+  color: #008080;
+  margin-bottom: 15px;
+}
+
+/* Projects Section */
+.projects {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  color: #008080;
+  margin-bottom: 20px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  padding: 10px;
+  background: #008080;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: #f0f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonial-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.testimonial-box p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #008080;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 12px 24px;
+  background: #008080;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #005f5f;
+}
+
+/* Newsletter Signup Section */
+.newsletter-signup {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  margin: 40px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup h2 {
+  font-size: 2rem;
+  color: #008080;
+  margin-bottom: 10px;
+}
+
+.newsletter-signup p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.newsletter-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #008080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #005f5f;
+}
+
+/* Footer Section */
+.footer {
+  padding: 20px 0;
+  background: #005f5f;
+  text-align: center;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #a7e0e0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 80px 20px;
+  }
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .service-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .service-box {
+    width: 100%;
+  }
+  .projects .project-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+  .about-item {
+    width: 100%;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* Dark Mode Overrides */
+.dark-mode {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+/* Header Dark Mode */
+.dark-mode .header {
+  background: url("https://www.shutterstock.com/shutterstock/photos/2578034453/display_1500/stock-photo-a-low-light-interior-room-of-beautiful-empty-new-house-with-chairs-and-couch-and-moving-boxes-at-2578034453.jpg") no-repeat center center/cover;
+  /* Optionally darken the image overlay */
+  position: relative;
+}
+.dark-mode .header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+.dark-mode .header .header-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navigation Dark Mode */
+.dark-mode .navigation {
+  background: #1e1e1e;
+}
+.dark-mode .nav-link {
+  color: #e0e0e0;
+}
+.dark-mode .nav-link:hover {
+  color: #80cbc4;
+}
+
+/* About Section Dark Mode */
+.dark-mode .about {
+  background: #1e1e1e;
+}
+.dark-mode .about h2 {
+  color: #80cbc4;
+}
+.dark-mode .about-item p,
+.dark-mode .about-item ul {
+  color: #cfcfcf;
+}
+
+/* Services Section Dark Mode */
+.dark-mode .services {
+  background: #1e1e1e;
+}
+.dark-mode .services h2 {
+  color: #80cbc4;
+}
+.dark-mode .service-box {
+  background: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .service-box h3 {
+  color: #80cbc4;
+}
+.dark-mode .service-box p {
+  color: #cfcfcf;
+}
+
+/* Projects Section Dark Mode */
+.dark-mode .projects {
+  background: #121212;
+}
+.dark-mode .projects h2 {
+  color: #80cbc4;
+}
+.dark-mode .project-card {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .project-card p {
+  background: #008080;
+}
+
+/* Testimonials Section Dark Mode */
+.dark-mode .testimonials {
+  background: #1e1e1e;
+}
+.dark-mode .testimonial-box {
+  background: #2a2a2a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .testimonial-box p {
+  color: #cfcfcf;
+}
+
+/* Contact Section Dark Mode */
+.dark-mode .contact {
+  background: #1e1e1e;
+}
+.dark-mode .contact h2 {
+  color: #80cbc4;
+}
+.dark-mode .contact-form input,
+.dark-mode .contact-form textarea {
+  background: #2a2a2a;
+  border: 1px solid #555;
+  color: #e0e0e0;
+}
+.dark-mode .contact-form button {
+  background: #008080;
+}
+.dark-mode .contact-form button:hover {
+  background: #005f5f;
+}
+
+/* Newsletter Signup Section Dark Mode */
+.dark-mode .newsletter-signup {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dark-mode .newsletter-signup h2 {
+  color: #80cbc4;
+}
+.dark-mode .newsletter-signup p {
+  color: #cfcfcf;
+}
+.dark-mode .newsletter-form input[type="email"] {
+  background: #2a2a2a;
+  border: 1px solid #555;
+  color: #e0e0e0;
+}
+.dark-mode .newsletter-form button {
+  background: #008080;
+}
+.dark-mode .newsletter-form button:hover {
+  background: #005f5f;
+}
+
+/* Footer Dark Mode */
+.dark-mode .footer {
+  background: #1e1e1e;
+}
+.dark-mode .footer p {
+  color: #cfcfcf;
+}
+.dark-mode .social-icon {
+  color: #e0e0e0;
+}
+.dark-mode .social-icon:hover {
+  color: #80cbc4;
+}
